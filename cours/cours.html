@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Example</title>
+
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section data-markdown data-separator-vertical="^\n\n">
+					<textarea data-template>
+						# Les TD L.E.A de M.DUBOURG
+						---
+
+						* [TD 1 : Les outils mis à disposition par l'université](#/cours1)
+
+
+						* [TD 2 : Les outils pour réussir ses recherches universitaires sur internet](#/cours2)
+
+
+						* [TD3 : Les bonnes pratiques sur les réseaux sociaux + créer son tableau de bord pour réussir sa veille d'informations](#/cours3)
+						
+						
+						* [TD4 : Les bases du web avec l'apprentissage du HTML / CSS](#/cours4)
+						
+						
+						* [TD5 : La rédaction sur le web](#/cours5)
+						
+						
+						* [TD6 : WorldPress](#/cours6)
+					</textarea>
+				  </section>
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section id="cours1" data-markdown="cours1.md" data-background-color="aquamarine" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+				<section id="cours2" data-markdown="cours2.md" data-background-color="beige" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+                <section id="cours3" data-markdown="cours3.md" data-background-color="#90B43C" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+                <section id="cours4" data-markdown="cours4.md" data-background-color="#993397" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+				<section id="cours5" data-markdown="cours5.md" data-background-color="#44C1B2" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+				<section id="cours6" data-markdown="cours6.md" data-background-color="#8A632E" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\n\n"></section>
+            </div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+            
+
+		</script>
+
+	</body>
+</html>
